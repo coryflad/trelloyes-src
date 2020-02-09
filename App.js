@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import List from './List'
+import List from './practice-list'
 import './App.css';
 
 class App extends Component {
@@ -22,7 +22,7 @@ class App extends Component {
             <List
               key={list.id}
               header={list.header}
-              cards={list.cardIds.map(id => store.allCards[id])}
+              card={list.cardIds.map(id => store.allCards[id])}
             />
           ))}
         </div>
